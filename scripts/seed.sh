@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./cassandra_setup.sh
-./elasticsearch_setup.sh
-./kafka_setup.sh
-./mysql_setup.sh
+./scripts/cassandra_setup.sh
+./scripts/elasticsearch_setup.sh
+./scripts/kafka_setup.sh
+./scripts/mysql_setup.sh

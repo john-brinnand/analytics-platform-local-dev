@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mysql -u root -h $(docker-machine ip dev) -P 9306 -u root --password=password <<"EOF"
+mysql -u root -h $(docker-machine ip dev) -P 3306 -u root --password=password <<"EOF"
 CREATE DATABASE catalog_service;
 USE catalog_service;
 
