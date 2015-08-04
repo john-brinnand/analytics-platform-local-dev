@@ -10,12 +10,14 @@ kafka:
     - zookeeper:zookeeper
   environment:
     KAFKA_ADVERTISED_HOST_NAME: 192.168.99.100
-schemaregistry:
-  image: confluent/schema-registry
-  ports: 8081:8081
-  links:
-    - zookeeper:zookeeper
-    - kafka:kafka
+# Currently returning error io.confluent.kafka.schemaregistry.storage.exceptions.StoreInitializationException: No live Kafka brokers
+# schemaregistry:
+#   image: confluent/schema-registry
+#   ports:
+#     - 8081:8081
+#   links:
+#     - zookeeper:zookeeper
+#     - kafka:kafka
 cassandra:
   image: relateiq/cassandra
   ports:
