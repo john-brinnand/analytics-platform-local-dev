@@ -19,7 +19,7 @@ kafka:
 #     - zookeeper:zookeeper
 #     - kafka:kafka
 cassandra:
-  image: relateiq/cassandra
+  image: cassandra
   ports:
     - 9160:9160 # Thrift
     - 7199:7199 # JMX

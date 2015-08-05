@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker run -i relateiq/cassandra /opt/cassandra/bin/cqlsh $(docker-machine ip dev) <<EOF
+docker run -i cassandra cqlsh $(docker-machine ip dev) <<EOF
 -- Create a keyspace like this in the Dev Cluster.
 --
 -- CREATE KEYSPACE visitor WITH replication = {
