@@ -1,5 +1,7 @@
 #!/bin/bash
 
+eval "$(docker-machine env dev)"
+
 docker run -i cassandra cqlsh $(docker-machine ip dev) <<EOF
 -- Create a keyspace like this in the Dev Cluster.
 --

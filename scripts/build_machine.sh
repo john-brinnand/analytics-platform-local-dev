@@ -1,8 +1,9 @@
 #!/bin/bash
 MACHINE=dev
 CPUS=2
+MEM=2048
 
-docker-machine create --driver virtualbox --virtualbox-cpu-count $CPUS $MACHINE
+docker-machine create --driver virtualbox --virtualbox-cpu-count $CPUS --virtualbox-memory $MEM $MACHINE
 
 if [ `docker-machine ip dev` != 192.168.99.100 ]
 then

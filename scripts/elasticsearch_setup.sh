@@ -1,5 +1,7 @@
 #!/bin/bash
 
+eval "$(docker-machine env dev)"
+
 HOST=$(docker-machine ip dev):9200
 SHARDS=1
 REPLICAS=1

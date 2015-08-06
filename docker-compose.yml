@@ -10,14 +10,6 @@ kafka:
     - zookeeper:zookeeper
   environment:
     KAFKA_ADVERTISED_HOST_NAME: 192.168.99.100
-# Currently returning error io.confluent.kafka.schemaregistry.storage.exceptions.StoreInitializationException: No live Kafka brokers
-# schemaregistry:
-#   image: confluent/schema-registry
-#   ports:
-#     - 8081:8081
-#   links:
-#     - zookeeper:zookeeper
-#     - kafka:kafka
 cassandra:
   image: cassandra
   ports:
@@ -39,4 +31,12 @@ mysql:
     MYSQL_ROOT_PASSWORD: password
   ports:
     - 3306:3306 # MySQL socket
-# Todo schema registry
+# Schema registry needs more memory than default
+# schemaregistry:
+#   image: confluent/schema-registry
+#   ports:
+#     - 8081:8081
+#   links:
+#     - kafka:kafka
+#     - zookeeper:zookeeper
+#   command: bash -c "sleep 20 && /schema-registry-docker.sh"
