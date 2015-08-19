@@ -25,7 +25,7 @@ commands normally.
 
 First, ensure you are in the directory creative-server-local-dev.
 
-    docker-compose up
+    ./start.sh
 
 ### Seed the databases?
 
