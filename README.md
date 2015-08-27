@@ -1,4 +1,6 @@
-# Creative Server Local Dev
+# Analytic Platform Local Dev
+
+# Shamelessly cloned from Brian Murphy's creative-server-local-dev with a thousand thanks.
 
 ## How do I...
 
@@ -26,15 +28,11 @@ commands normally.
 First, ensure you are in the directory creative-server-local-dev.
 
     ./start.sh
+    
+# Note: for WebHdfs to work this entry must be put into the /etc/hosts file
+# The new entry maps the server name in docker-compose.yml
+# with the IP of the docker-machine.
 
-### Seed the databases?
-
-    ./scripts/seed.sh
-
-### Stop the services?
-
-CTRL-C in the window running docker-compose, or `docker-compose kill`
-
-### Reset Kafka?
-
-    ./scripts/reset_kafka.sh
+> sudo vi /etc/hosts
+....
+192.168.99.103  dockerhadoop 
