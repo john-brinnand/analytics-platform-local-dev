@@ -31,7 +31,7 @@ schemaregistry:
   links:
     - kafka:kafka
     - zookeeper:zookeeper
-  command: bash -c "sleep 20 && /schema-registry-docker.sh"
+  command: bash -c "sleep 10 && /schema-registry-docker.sh"
 # ---------------------------------------
 # Hadoop
 #---------------------------------------
