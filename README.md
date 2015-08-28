@@ -1,5 +1,8 @@
 # Analytic Platform Local Dev
 
+### Credits
+Shamelessly cloned from Brian Murphy's creative-server-local-dev - with a thousand thanks.
+
 ## How do I...
 
 ### Install dependencies?
@@ -35,6 +38,3 @@ with the IP of the docker-machine.
 > sudo vi /etc/hosts
 ....
 192.168.99.103  dockerhadoop 
-
-### Credits
-Shamelessly cloned from Brian Murphy's creative-server-local-dev - with a thousand thanks.
