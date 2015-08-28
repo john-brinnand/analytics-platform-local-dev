@@ -29,9 +29,9 @@ First, ensure you are in the directory creative-server-local-dev.
 
     ./start.sh
     
-# Note: for WebHdfs to work this entry must be put into the /etc/hosts file
-# The new entry maps the server name in docker-compose.yml
-# with the IP of the docker-machine.
+Note: for WebHdfs to work this entry must be put into the /etc/hosts file
+The new entry maps the server name in docker-compose.yml
+with the IP of the docker-machine.
 
 > sudo vi /etc/hosts
 ....
