@@ -1,6 +1,6 @@
 # Analytic Platform Local Dev
 
-# Shamelessly cloned from Brian Murphy's creative-server-local-dev with a thousand thanks.
+ Shamelessly cloned from Brian Murphy's creative-server-local-dev with a thousand thanks.
 
 ## How do I...
 
