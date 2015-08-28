@@ -4,7 +4,7 @@ CPUS=2
 MEM=16392
 DISK=10000
 
-docker-machine create --driver virtualbox --virtualbox-cpu-count $CPUS --virtualbox-memory $MEM ---virtualbox-disk-size $DISK $MACHINE 
+docker-machine create --driver virtualbox --virtualbox-cpu-count $CPUS --virtualbox-memory $MEM --virtualbox-disk-size $DISK $MACHINE 
 
 if [ `docker-machine ip dev` != 192.168.99.100 ]
 then
