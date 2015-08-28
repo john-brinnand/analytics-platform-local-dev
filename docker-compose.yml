@@ -20,7 +20,7 @@ kafka:
     # To find your docker-machine's ip: 
     # docker-machine ip <my-docker-machine>
     #---------------------------------------
-    KAFKA_ADVERTISED_HOST_NAME: 192.168.99.103 
+    KAFKA_ADVERTISED_HOST_NAME: 192.168.99.100 
 #-------------------------------------------------
 # Schema registry needs more memory than default
 #-------------------------------------------------
@@ -40,7 +40,7 @@ dockerhadoop:
    hostname: dockerhadoop
    environment:
      DOCKER_HOST:
-     - 192.168.99.103
+     - 192.168.99.100
    ports:
      - 50070:50070 # webhdfs public
      - 50075:50075 # webhdfs reroute
