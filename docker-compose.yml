@@ -42,7 +42,16 @@ dockerhadoop:
      DOCKER_HOST:
      - 192.168.99.100
    ports:
-     - 50070:50070 # webhdfs public
-     - 50075:50075 # webhdfs reroute
-     - 9000:9000   # namenode
-     
+     - 50070:50070   # webhdfs public
+     - 50075:50075   # webhdfs reroute
+     - 9000:9000     # namenode
+     - 8088:8088     # resource manager
+     - 19888:19888   # job-history server 
+# ---------------------------------------
+# webhdfs-dataloader
+#---------------------------------------
+#webhdfs:
+#   image: spongecell/webhdfs-dataloader:local-Johns-MacBook-Pro.local-201510051344-V-1.0
+#   hostname: webhdfs-dataloader
+#   ports:
+#     - 8080:8080
